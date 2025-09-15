@@ -31,7 +31,7 @@ export const techStackData = {
     { name: 'Express.js', icon: SiExpress, color: '#68A063' },
     { name: 'MongoDB', icon: SiMongodb, color: '#47A248' },
     { name: 'Node.js', icon: SiNodedotjs, color: '#339933' },
-    { name: 'Postman', icon: SiPostman, color: '#F80000' },
+    { name: 'Postman', icon: SiPostman, color: '#FF6C37' },
     { name: 'Git', icon: SiGit, color: '#F05032' },
     { name: 'Docker', icon: SiDocker, color: '#2496ED' },
   ],

@@ -46,17 +46,17 @@ const Personal = () => {
         >
             <motion.div
                 className="flex justify-center mb-6"
-                initial={{ opacity: 0, scale: 1 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                whileHover={{ scale: 1.1, rotate: 2 }}
-                whileTap={{ scale: 1.1, rotate: 2 }}
-                transition={{ duration: 0.7 }}
+                initial={{ opacity: 0, scale: 0.9, rotate: 10 }}
+                animate={{ opacity: 1, scale: 1, rotate: 5 }}
+                whileHover={{ scale: 1.1, rotate: 0 }}
+                whileTap={{ scale: 0.9, rotate: 3 }}
+                transition={{ duration: 0.7, ease: "easeOut" }}
             >
                 <img
                     src={personalData.photo}
                     alt="Profile"
-                    className="w-40 h-40 rounded-full border-4 border-blue-400 shadow-lg object-cover"
-                    style={{ boxShadow: "0 12px 25px rgba(59,130,246,0.5)" }} // shadow mengikuti lingkaran
+                    className="w-40 h-40 rounded-full border-4 border-blue-400 shadow-lg object-cover transform scale-x-[-1]"
+                    style={{ boxShadow: "0 12px 25px rgba(59,130,246,0.5)" }}
                 />
             </motion.div>
 
@@ -86,14 +86,11 @@ const Personal = () => {
             </motion.div>
 
             <div className="ml-8">
-                <motion.div
-                    className="mb-4 flex items-baseline"
-                    variants={itemVariants}
-                >
+                <motion.div className="mb-4" variants={itemVariants}>
                     <span className="text-blue-400">"name"</span>
                     <span className="text-white">: </span>
                     <motion.span
-                        className="text-yellow-300 inline-flex items-baseline overflow-hidden whitespace-nowrap"
+                        className="text-yellow-300"
                         variants={typewriterVariants}
                     >
                         "{personalData.name}"
@@ -101,14 +98,11 @@ const Personal = () => {
                     <span className="text-white">,</span>
                 </motion.div>
 
-                <motion.div
-                    className="mb-4 flex items-baseline"
-                    variants={itemVariants}
-                >
+                <motion.div className="mb-4" variants={itemVariants}>
                     <span className="text-blue-400">"description"</span>
                     <span className="text-white">: </span>
                     <motion.span
-                        className="text-yellow-300 inline-flex items-baseline overflow-hidden whitespace-nowrap"
+                        className="text-yellow-300"
                         variants={typewriterVariants}
                     >
                         "{personalData.description}"
@@ -116,14 +110,11 @@ const Personal = () => {
                     <span className="text-white">,</span>
                 </motion.div>
 
-                <motion.div
-                    className="mb-4 flex items-baseline"
-                    variants={itemVariants}
-                >
+                <motion.div className="mb-4" variants={itemVariants}>
                     <span className="text-blue-400">"currently_learning"</span>
                     <span className="text-white">: </span>
                     <motion.span
-                        className="text-yellow-300 inline-flex items-baseline overflow-hidden whitespace-nowrap"
+                        className="text-yellow-300"
                         variants={typewriterVariants}
                     >
                         "{personalData.currentlyLearning}"
@@ -131,14 +122,11 @@ const Personal = () => {
                     <span className="text-white">,</span>
                 </motion.div>
 
-                <motion.div
-                    className="mb-4 flex items-baseline"
-                    variants={itemVariants}
-                >
+                <motion.div className="mb-4" variants={itemVariants}>
                     <span className="text-blue-400">"status"</span>
                     <span className="text-white">: </span>
                     <motion.span
-                        className="text-yellow-300 inline-flex items-baseline overflow-hidden whitespace-nowrap"
+                        className="text-yellow-300"
                         variants={typewriterVariants}
                     >
                         "{personalData.status}"
@@ -146,14 +134,11 @@ const Personal = () => {
                     <span className="text-white">,</span>
                 </motion.div>
 
-                <motion.div
-                    className="mb-4 flex items-baseline"
-                    variants={itemVariants}
-                >
+                <motion.div className="mb-4" variants={itemVariants}>
                     <span className="text-blue-400">"location"</span>
                     <span className="text-white">: </span>
                     <motion.span
-                        className="text-yellow-300 inline-flex items-baseline overflow-hidden whitespace-nowrap"
+                        className="text-yellow-300"
                         variants={typewriterVariants}
                     >
                         "{personalData.location}"
@@ -161,14 +146,11 @@ const Personal = () => {
                     <span className="text-white">,</span>
                 </motion.div>
 
-                <motion.div
-                    className="mb-4 flex items-baseline"
-                    variants={itemVariants}
-                >
+                <motion.div className="mb-4" variants={itemVariants}>
                     <span className="text-blue-400">"passionate"</span>
                     <span className="text-white">: </span>
                     <motion.span
-                        className="text-yellow-300 inline-flex items-baseline overflow-hidden whitespace-nowrap"
+                        className="text-yellow-300"
                         variants={typewriterVariants}
                     >
                         "{personalData.passionate}"

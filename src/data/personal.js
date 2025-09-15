@@ -8,7 +8,7 @@ export const personalData = {
   status: "Informatics Engineering Student",
   currentlyLearning: "Google Cloud Platform",
   location: "Bandung, West Java, Indonesia",
-  passionate: "Backend development, AI/ML, and IOT",
+  passionate: "Backend Development, AI/ML, and IOT",
   email: "lutfizadeh5@gmail.com",
   github: "github.com/Lutfizadeh",
   linkedin: "linkedin.com/in/lutfi-zadeh-8bba63317/",

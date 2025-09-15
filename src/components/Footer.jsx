@@ -31,18 +31,9 @@ const Footer = () => {
 
     return (
         <footer className="text-center text-gray-500 text-sm border-t border-gray-800 pt-8">
-            <div className="flex items-center justify-center gap-1 mb-2">
+            <div className="flex flex-wrap items-center justify-center gap-1 mb-2 text-center">
                 <span>// Portfolio created with</span>
-                <motion.span
-                    animate={{ scale: [1, 1.2, 1] }}
-                    transition={{
-                        duration: 1,
-                        repeat: Infinity,
-                        repeatDelay: 1,
-                    }}
-                >
-                    <FaHeart size={16} className="text-red-500" />
-                </motion.span>
+                <FaHeart className="text-red-500" />
                 <span>by Lutfi Zadeh Filoshof</span>
             </div>
 
