@@ -1,27 +1,43 @@
 name: Generate Snake
 
 on:
-  schedule: # jalankan tiap 12 jam
-    - cron: "0 */12 * * *"
-  workflow_dispatch: # bisa jalan manual dari GitHub Action tab
+  schedule:
+    - cron: "0 */12 * * *"  # Jalankan tiap 12 jam
+  workflow_dispatch:          # Bisa dijalankan manual
 
 jobs:
   build:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout repo content
+      # 1. Checkout repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
+      # 2. Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+
+      # 3. Buat folder dist
+      - name: Create output folder
+        run: mkdir -p dist
+
+      # 4. Generate snake animation
       - name: Generate snake animation
         uses: Platane/snk@v3
         with:
           github_user_name: Lutfizadeh
           outputs: dist/snake.svg
 
-      - name: Push snake to output branch
-        uses: crazy-max/ghaction-github-pages@v3.1.0
-        with:
-          target_branch: output
-          build_dir: dist
+      # 5. Commit dan push ke branch utama
+      - name: Commit and push snake
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add dist/snake.svg
+          git commit -m "Update snake animation [skip ci]" || echo "No changes to commit"
+          git push
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
