@@ -1,0 +1,27 @@
+name: Generate Snake
+
+on:
+  schedule: # jalankan tiap 12 jam
+    - cron: "0 */12 * * *"
+  workflow_dispatch: # bisa jalan manual dari GitHub Action tab
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo content
+        uses: actions/checkout@v3
+
+      - name: Generate snake animation
+        uses: Platane/snk@v3
+        with:
+          github_user_name: Lutfizadeh
+          outputs: dist/snake.svg
+
+      - name: Push snake to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
