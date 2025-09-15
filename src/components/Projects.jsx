@@ -195,6 +195,45 @@ const Projects = () => {
                                 animate={{ x: 0, opacity: 1 }}
                                 transition={{ delay: 0.7, duration: 0.4 }}
                             >
+                                <span className="text-blue-400">"role"</span>
+                                <span className="text-white">: </span>
+                                <motion.span
+                                    className={`px-2 py-1 rounded text-sm ${
+                                        project.role === "data_analyst"
+                                            ? "text-cyan-300 bg-cyan-900/30"
+                                            : project.role ===
+                                              "fullstack_developer"
+                                            ? "text-rose-300 bg-rose-900/30"
+                                            : project.role === "iot_engineer"
+                                            ? "text-slate-300 bg-slate-800/30"
+                                            : "text-amber-300 bg-amber-900/30"
+                                    }`}
+                                    animate={{
+                                        scale:
+                                            project.role === "backend"
+                                                ? [1, 1.05, 1]
+                                                : 1,
+                                    }}
+                                    transition={{
+                                        duration: 2,
+                                        repeat:
+                                            project.role === "backend"
+                                                ? Infinity
+                                                : 0,
+                                        repeatDelay: 3,
+                                    }}
+                                >
+                                    "{project.role}"
+                                </motion.span>
+                                <span className="text-white">,</span>
+                            </motion.div>
+
+                            <motion.div
+                                className="mb-3"
+                                initial={{ x: -20, opacity: 0 }}
+                                animate={{ x: 0, opacity: 1 }}
+                                transition={{ delay: 0.7, duration: 0.4 }}
+                            >
                                 <span className="text-blue-400">"status"</span>
                                 <span className="text-white">: </span>
                                 <motion.span
