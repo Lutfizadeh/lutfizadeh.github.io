@@ -215,6 +215,22 @@ const Projects = () => {
                   <span className="text-white">,</span>
                 </div>
 
+                {/* INDIVIDU OR TEAM */}
+                <div className="mb-3">
+                  <span className="text-blue-400">"individu"</span>
+                  <span className="text-white">: </span>
+                  <span
+                    className={`px-2 py-1 rounded text-sm ${
+                      project.individu === true
+                        ? "text-green-300 bg-green-900/30 border border-green-500/20"
+                        : "text-orange-300 bg-orange-900/30 border border-orange-500/20"
+                    }`}
+                  >
+                    {project.individu === true ? "true" : "false"}
+                  </span>
+                  <span className="text-white">,</span>
+                </div>
+
                 {/* LINKS IN JSON OBJECT */}
                 {(project.github || project.demo) && (
                   <div className="mb-3">

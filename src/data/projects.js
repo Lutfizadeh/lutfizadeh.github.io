@@ -8,6 +8,7 @@ export const projectsData = [
     role: "system_architect & project_manager",
     date: "Apr - Jun 2026",
     type: "academic_assignment",
+    individu: false,
     github: null,
     demo: null
   },
@@ -20,6 +21,7 @@ export const projectsData = [
     role: "cloud_specialist",
     date: "Jan - Feb 2026",
     type: "certification",
+    individu: true,
     github: null,
     demo: null
   },
@@ -32,6 +34,7 @@ export const projectsData = [
     role: "fullstack_programmer",
     date: "Oct - Dec 2025",
     type: "internship",
+    individu: false,
     github: null,
     demo: null
   },
@@ -44,6 +47,7 @@ export const projectsData = [
     role: "junior_web_developer",
     date: "Oct 2025",
     type: "certification",
+    individu: true,
     github: null,
     demo: null
   },
@@ -56,6 +60,7 @@ export const projectsData = [
     role: "fullstack_developer",
     date: "Jul - Oct 2025",
     type: "internship",
+    individu: true,
     github: null,
     demo: null
   },
@@ -68,6 +73,7 @@ export const projectsData = [
     role: "backend_developer",
     date: "Apr - Jun 2025",
     type: "academic_assignment",
+    individu: false,
     github: "https://github.com/DimasIvandaFauzi/resto-backend",
     demo: null
   },
@@ -80,6 +86,7 @@ export const projectsData = [
     role: "backend_developer",
     date: "Apr - Jun 2025",
     type: "academic_assignment",
+    individu: false,
     github: "https://github.com/Lutfizadeh/transfer-bank",
     demo: null
   },
@@ -92,6 +99,7 @@ export const projectsData = [
     role: "product_owner & backend_developer",
     date: "Mar - Jun 2025",
     type: "academic_assignment",
+    individu: false,
     github: "https://github.com/Lutfizadeh/seenau-api",
     demo: null
   },
@@ -104,6 +112,7 @@ export const projectsData = [
     role: "data_analyst",
     date: "Mar - Jun 2025",
     type: "academic_assignment",
+    individu: false,
     github: "https://github.com/Lutfizadeh/vanillajs-major-recommendation",
     demo: "https://vanillajs-major-recommendation.onrender.com"
   },
@@ -116,6 +125,7 @@ export const projectsData = [
     role: "backend_developer",
     date: "Mar - May 2025",
     type: "academic_assignment",
+    individu: false,
     github: "https://github.com/Lutfizadeh/springboot-petshop",
     demo: null
   },
@@ -128,6 +138,7 @@ export const projectsData = [
     role: "cloud_learner",
     date: "Jan - Mar 2025",
     type: "certification",
+    individu: true,
     github: null,
     demo: null
   },
@@ -140,6 +151,7 @@ export const projectsData = [
     role: "data_analyst",
     date: "Jan 2025",
     type: "academic_assignment",
+    individu: true,
     github: null,
     demo: null
   },
@@ -152,6 +164,7 @@ export const projectsData = [
     role: "iot_engineer",
     date: "Aug - Oct 2024",
     type: "academic_assignment",
+    individu: false,
     github: "https://github.com/Lutfizadeh/esp8266-smartdoor",
     demo: null
   }
