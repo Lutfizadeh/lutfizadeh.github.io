@@ -29,6 +29,8 @@ import {
   SiPandas,
   SiLooker,
   SiFigma,
+  SiClaude,
+  SiGooglegemini,
 } from "react-icons/si";
 
 export const techStackData = {
@@ -65,5 +67,9 @@ export const techStackData = {
     { name: 'NodeMCU', icon: SiEspressif, color: '#0A3D62' },
     { name: 'Node-RED', icon: SiNodered, color: '#8F0000' },
     { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
+  ],
+  prompt_engineering: [
+    { name: 'Gemini', icon: SiGooglegemini, color: '#4285F4' },
+    { name: 'Claude', icon: SiClaude, color: '#F24E1E' },
   ]
 };
