@@ -23,7 +23,12 @@ import {
   SiPostman,
   SiRadixui,
   SiEspressif,
-  SiNodered
+  SiNodered,
+  SiPython,
+  SiNumpy,
+  SiPandas,
+  SiLooker,
+  SiFigma,
 } from "react-icons/si";
 
 export const techStackData = {
@@ -36,6 +41,8 @@ export const techStackData = {
     { name: 'Docker', icon: SiDocker, color: '#2496ED' },
   ],
   other: [
+    { name: 'Numpy', icon: SiNumpy, color: '#3776AB' },
+    { name: 'Pandas', icon: SiPandas, color: '#3776AB' },
     { name: 'Laravel', icon: SiLaravel, color: '#FF2D20' },
     { name: 'Next.js', icon: SiNextdotjs, color: '#FFFFFF' },
     { name: 'React.js', icon: SiReact, color: '#61DAFB' },
@@ -44,6 +51,7 @@ export const techStackData = {
     { name: 'Shadcn UI', icon: SiRadixui, color: '#FFFFFF' },
     { name: 'Bootstrap', icon: SiBootstrap, color: '#7952B3' },
     { name: 'Flutter', icon: SiFlutter, color: '#02569B' },
+    { name: 'Python', icon: SiPython, color: '#3776AB' },
     { name: 'TypeScript', icon: SiTypescript, color: '#3178C6' },
     { name: 'JavaScript', icon: SiJavascript, color: '#F7DF1E' },
     { name: 'PHP', icon: SiPhp, color: '#777BB4' },
@@ -51,9 +59,11 @@ export const techStackData = {
     { name: 'Oracle', icon: SiOracle, color: '#F80000' },
     { name: 'MySQL', icon: SiMysql, color: '#4479A1' },
     { name: 'GitHub', icon: SiGithub, color: '#F5F5F5' },
+    { name: 'Looker', icon: SiLooker, color: '#FF6C37' },
     { name: 'GCP', icon: SiGooglecloud, color: '#4285F4' },
     { name: 'AWS', icon: SiAwslambda, color: '#FF9900' },
     { name: 'NodeMCU', icon: SiEspressif, color: '#0A3D62' },
     { name: 'Node-RED', icon: SiNodered, color: '#8F0000' },
+    { name: 'Figma', icon: SiFigma, color: '#F24E1E' },
   ]
 };
